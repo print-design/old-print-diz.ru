@@ -1,6 +1,6 @@
 <?php
 
-define('APPLICATION', '/print-diz.ru');
+define('APPLICATION', '/old-print-diz.ru');
 
 define('DATABASE_HOST', 'localhost');
 define('DATABASE_USER', 'root');

@@ -6,7 +6,7 @@ RewriteCond %{HTTPS} off
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-RewriteBase /print-diz.ru/
+RewriteBase /old-print-diz.ru/
 RewriteRule ^images - [L]
 RewriteRule ^PHPMailer - [L]
 
