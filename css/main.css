@@ -1,0 +1,936 @@
+@import url("../fonts/montserrat/stylesheet.css");
+@import url("../fonts/avenirnext/stylesheet.css");
+
+@font-face {
+  font-family: 'fontawesome';
+  src: url(../fonts/fontawesome-webfont.ttf);
+}
+
+.font-awesome {
+    font-family: fontawesome;
+}
+
+/* CUSTOMIZE BOOTSTRAP
+---------------------------------------------------*/
+.container p {
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #0057CC;
+}
+
+header a:link, header a:visited {
+    color: #0057CC;
+}
+
+header a:active, header a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.prod a:link, .prod a:visited {
+    color: #0057CC;
+}
+
+.prod a:active, .prod a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+li.breadcrumb-item a:link, li.breadcrumb-item a:visited {
+    color: #0057CC;
+}
+
+li.breadcrumb-item a:active, li.breadcrumb-item a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+footer a:link, footer a:visited {
+    color: black;
+}
+
+footer a:active, footer a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+body {
+    font-size: 18px;
+}
+
+img.float-left {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+img.float-right {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.container hr {
+    clear: both;
+}
+
+.breadcrumb {
+    background-color: white;
+    padding-left: 0px;
+}
+
+a.details:link, a.details:hover, a.details:active, a.details:visited {
+    color: white;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+    z-index: 0;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #FFF; 
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.carousel-item h1{
+    color: black;
+}
+
+.carousel-item p {
+    color: black;
+}
+
+#carousel-item-0 {
+    background-image: url(../images/front-carousel/DSC_0407.jpg);  
+}
+
+/*#carousel-item-0 {
+    background-image: url(../images/front-carousel/TRVK0045-HDR.jpg);  
+}*/
+
+#carousel-item-1 {
+    background-image: url(../images/front-carousel/TRVK0116-HDR.jpg);
+}
+
+#carousel-item-2 {
+    background-image: url(../images/front-carousel/TRVK0076.jpg); 
+     
+}
+
+#carousel-item-3 {
+    background-image: url(../images/front-carousel/TRVK0177.jpg); 
+}
+
+#carousel-item-4 {
+    background-image: url(../images/front-carousel/TRVK0175.jpg);  
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 120px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 57px;
+  width: 57px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+  background-image: none;
+  background-color: white;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 32px;
+  font-weight: bold;
+  color: #0057CC;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 32px;
+  font-weight: bold;
+  color: #0057CC;
+}
+
+.carousel-caption {
+    top: 15px;
+    left: 90px;
+    width: 25%;
+    opacity: 0.8; /* Полупрозрачный фон */
+    filter: alpha(Opacity=80); /* Прозрачность в IE */
+    background-color: white;
+    padding: 10px;
+}
+
+.carousel-caption.text-left h1 {
+    font-size: 22px;
+}
+
+.carousel-caption.text-left p {
+    font-size: 18px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* HEADER, FOOTER
+----------------------------------------*/
+header p {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+footer {
+    background-color: lightgrey;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .bigtext {
+    font-size: 18px;
+}
+
+footer .smalltext, footer .smalltext a {
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 2px;
+}
+
+footer .container p {
+    margin-bottom: 2px;
+}
+
+#topmost {
+    padding: 15px;
+}
+
+a.title h1 {
+    margin: 0px;
+    padding: 0px;
+    font-family: montserrat;
+    font-size: 26.2857px;
+    display: inline;
+}
+
+a.title:link, a.title:hover, a.title:active, a.title:visited {
+    color: black; text-decoration: none; font-weight: bold;
+}
+
+img#logo {
+    display: inline;
+    vertical-align: baseline;
+    margin-right: 5px;
+}
+
+/* NAVBAR
+------------------------------------------*/
+.navbar {
+    background-color : #0057CC;
+    z-index: 10;
+}
+
+.navbar.navbar-white {
+    background-color: white;
+    z-index: 10;
+}
+
+.navbar.navbar-light {
+    background-color: white;
+}
+
+.navbar.navbar-light a.nav-link, a.dropdown-item {
+    font-size: 1.25rem;
+}
+
+.navbar.navbar-light a.nav-link:link, .navbar.navbar-light a.nav-link:visited, .navbar.navbar-light a.dropdown-item:link, .navbar.navbar-light a.dropdown-item:visited {
+    color: #0057CC;
+    padding-left: 0;
+}
+
+.navbar.navbar-light a.nav-link:active, .navbar.navbar-light a.nav-link:hover, .navbar.navbar-light a.dropdown-item:active, .navbar.navbar-light a.dropdown-item:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.navbar.navbar-light a.nav-link.disabled, .navbar.navbar-light a.dropdown-item.disabled {
+    color: #6c757d;
+}
+
+li.nav-item {
+    margin-right: 15px;
+}
+
+/* ФОРМЫ */
+p.form-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ЛЕВОЕ МЕНЮ
+-------------------------------------------------*/
+
+.left-freeze-menu {
+    background-color: #e9ecef;
+    width: 200px;
+    overflow-y: auto;
+    left: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.menufloat {
+    top: 220px;
+    position: absolute;
+}
+
+.menufixed-top {
+    top: 75px;
+    position: fixed;
+}
+
+.menufixed-bottom {
+    bottom: 0px;
+    position: fixed;
+}
+
+.left-freeze-buttons {
+    width: 160px;
+    position: fixed;
+    right: 90px;
+    z-index: 20;
+}
+
+@media (max-width: 1199px) {
+    .left-freeze-menu {
+        display: none;
+    }
+    
+    .left-freeze-buttons {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .left-freeze-menu {
+        display: block;
+    }
+    
+    .left-freeze-buttons {
+        display: block;
+    }
+
+    .container {
+        margin-left: 200px;
+        margin-right: auto;
+        max-width: 1050px;
+    }
+}
+
+@media (min-width: 1550px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1140px;
+    }
+}
+
+.left-freeze-menu .left-menu-title {
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: solid 1px white;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.left-freeze-menu a:link, .left-freeze-menu a:visited {
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: dashed 1px #007bff;
+}
+
+.left-freeze-menu a:active, .left-freeze-menu a:hover {
+    color: #6c757d;
+    text-decoration: none;
+    border-bottom: dashed 1px #6c757d;
+}
+
+.left-freeze-menu a.current:link, .left-freeze-menu a.current:visited, .left-freeze-menu a.current:active, .left-freeze-menu a.current:hover {
+    color: #0057CC;
+    text-decoration: none;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.link-to-top {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: #e9ecef;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    z-index: 1;
+}
+
+.link-to-top a:link, .link-to-top a:visited {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: dashed 1px white;
+}
+
+.link-to-top a:active, .link-to-top a:hover {
+    font-size: 18px;
+    color: #6c757d;
+    text-decoration: none;
+    border-bottom: dashed 1px lightgray;
+}
+
+/* Список продуктов
+------------------------------------------------*/
+@media (max-width: 767px){
+    .prod img {
+        width: 100%;
+        clear: both;
+    }
+}
+
+@media (min-width: 768px){
+    .prod img {
+        width: 50%;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.prod-divider {
+    clear: both;
+    border-bottom: solid 1px lightgray;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Карточка продукта
+------------------------------------------------*/
+@media (max-width: 767px){
+    .prod-image {
+        width: 100%;
+        clear: both;
+    }
+}
+
+@media (min-width: 768px){
+    .prod-image {
+        width: 40%;
+        float: right;
+    }
+}
+
+.prod-image {
+    text-align: center;
+}
+
+/* Материалы и структура
+--------------------------------------------------*/
+
+.layers {
+    margin-bottom: 10px;
+}
+
+.layers ol li.z0 {
+    position: relative;
+    z-index: 0;
+}
+
+.layers ol li.z1 {
+    position: relative;
+    z-index: 1;
+}
+
+.layers ol li.z2 {
+    position: relative;
+    z-index: 2;
+}
+
+.layers ol li.z3 {
+    position: relative;
+    z-index: 3;
+}
+
+.layers ol li.z4 {
+    position: relative;
+    z-index: 4;
+}
+
+.layers ol li.z5 {
+    position: relative;
+    z-index: 5;
+}
+
+.layers ol li.z6 {
+    position: relative;
+    z-index: 6;
+}
+
+.layers ol li svg {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .layers ol li svg {
+        display: inline;
+        vertical-align: middle;
+        width: 40%;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    
+    .layer-text {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+    }
+    
+    .layers ol {
+        margin-bottom: 80px;
+    }
+    
+    .layers ol li {
+        height: 50px;
+    }
+}
+
+.material-structure-item {
+    font-size: 16px;
+    background-color: #e9ecef;
+    padding: 10px;
+    z-index: 0;
+}
+
+.material-structure-title {
+    border-top: solid 1px white;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e9ecef;
+    padding: 10px;
+    clear: both;
+    z-index: 0;
+}
+
+.material-structure-item-title {
+    border-top: solid 1px white;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: #e9ecef;
+    padding: 10px;
+    z-index: 0;
+}
+
+.layers-products {
+    font-size: small;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/************************/
+.plenka {
+    margin-bottom: 20px;
+    z-index: 0;
+}
+.plenka-prozr {
+    background-image: url(../images/plenka/prozr.jpg);
+}
+
+.plenka-mat {
+    background-image: url(../images/plenka/mat.jpg);
+}
+
+.plenka-pearl {
+    background-image: url(../images/plenka/pearl.jpg);
+}
+
+.plenka-metal {
+    background-image: url(../images/plenka/metal.jpg);
+}
+
+.plenka-white {
+    background-image: url(../images/plenka/prozr.jpg);
+}
+
+.plenka-cpp {
+    background-image: url(../images/plenka/mat.jpg);
+}
+
+.plenka-combine {
+    background-image: url(../images/plenka/pearl.jpg);
+}
+
+.plenka table, .plenka p, .cat-list ul {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.plenka p {
+    padding: 10px;
+}
+
+.cat-list ul {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/**Списки продуктов**/
+.cat-list ul {
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: 0px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.cat-list ul li .cat {
+    display: inline-block;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.cat-list ul li .cat-pak {
+    background-position: 0 -242px;
+}
+
+.cat-list ul li .cat-flower {
+    background-position: -228px -59px;
+}
+
+.cat-list ul li .cat-s_prod {
+    background-position: -56px -114px;
+}
+
+.cat-list ul li .cat-udob {
+    background-position: -56px 0px;
+}
+
+.cat-list ul li .cat-hleb {
+    background-position: 0 -58px;
+}
+
+.cat-list ul li .cat-spich {
+    background-position: -229px 0px;
+}
+
+.cat-list ul li .cat-ov {
+    background-position: -59px -243px;
+}
+
+.cat-list ul li .cat-tex {
+    background-position: -113px 0;
+}
+
+.cat-list ul li .cat-ice {
+    background-position: -115px -244px;
+}
+
+.cat-list ul li .cat-him {
+    background-position: -57px -59px;
+}
+
+.cat-list ul li .cat-tea {
+    background-position: -173px -2px;
+}
+
+.cat-list ul li .cat-canz {
+    background-position: -173px -177px;
+}
+
+.cat-list ul li .cat-pod {
+    background-position: -229px -120px;
+}
+
+.cat-list ul li .cat-group {
+    background-position: -114px -57px;
+}
+
+.cat-list ul li .cat-parf {
+    background-position: -284px -119px;
+}
+
+.cat-list ul li .cat-zam {
+    background-position: 0 0;
+}
+
+.cat-list ul li .cat-snek {
+    background-position: -56px -180px;
+}
+
+.cat-list ul li .cat-drink {
+    background-position: -115px -180px;
+}
+
+.cat-list ul li .cat-polu {
+    background-image: url(../images/polu.png);
+    background-position: 10px 0;
+}
+
+.cat-list ul li .cat-kisl {
+    background-image: url(../images/kisl.png);
+    background-position: 0 5px;
+}
+
+/** Адаптация текста под разные размеры экрана
+Desktop
+1600x992px scaled down to scale(0.3181)
+Laptop
+1280x802px scaled down to scale(0.277)
+Tablet
+768x1024px scaled down to scale(0.219)
+Mobile
+320x480px scaled down to scale(0.219)
+**/
+
+.for-mobile {
+    display: none;
+}
+
+@media (max-width: 767px){
+    .for-mobile {
+        display: inline;
+    }
+}
+
+.for-tablet {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1279px){
+    .for-tablet {
+        display: inline;
+    }
+}
+
+.for-laptop {
+    display: none;
+}
+
+@media (min-width: 1280px) and (max-width: 1599px){
+    .for-laptop {
+        display: inline;
+    }
+}
+
+.for-desktop {
+    display: none;
+}
+
+@media (min-width: 1600px){
+    .for-desktop {
+        display: inline;
+    }
+}
+
+/*** СЛАЙД-ШОУ ***/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slideshow-mySlides {
+    text-align: center;
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.slideshow-cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.slideshow-prev, .slideshow-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.slideshow-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-prev:hover, .slideshow-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slideshow-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.slideshow-numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.slideshow-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a transparency effect for thumnbail images */
+.slideshow-demo {
+  opacity: 0.6;
+}
+
+.slideshow-active, .slideshow-dot:hover {
+  background-color: #717171;
+}
+
+.slideshow-active,
+.slideshow-demo:hover {
+  opacity: 1;
+}
+
+/* Fading animation */
+.slideshow-fade {
+  -webkit-animation-name: fade_slide;
+  -webkit-animation-duration: 1.5s;
+  animation-name: slideshow-fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slideshow-fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes slideshow-fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

@@ -1,0 +1,33 @@
+# REWRITE
+ <IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteBase /print-diz.ru/
+RewriteRule ^images - [L]
+RewriteRule ^PHPMailer - [L]
+
+RewriteRule manufacture manufacture.php
+RewriteRule package package.php
+RewriteRule label label.php
+RewriteRule film film.php
+RewriteRule contact contact.php
+
+RewriteRule confectionery prod/confectionery.php
+RewriteRule grocery prod/grocery.php
+RewriteRule bread prod/bread.php
+RewriteRule snack prod/snack.php
+RewriteRule candy prod/candy.php
+RewriteRule ice-cream prod/ice-cream.php
+RewriteRule bottle prod/bottle.php
+RewriteRule hygiene prod/hygiene.php
+RewriteRule chemicals prod/chemicals.php
+RewriteRule sachet prod/sachet.php
+RewriteRule medicine prod/medicine.php
+RewriteRule milk prod/milk.php
+RewriteRule hookah prod/hookah.php
+RewriteRule sauce prod/sauce.php
+</IfModule>
